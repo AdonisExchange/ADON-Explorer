@@ -1,12 +1,12 @@
-# eIquidus
+# ADON-Explorer
 
-![GitHub release (latest by date)](https://img.shields.io/github/v/release/team-exor/eiquidus?color=ffbd11&label=version)
-![GitHub Release Date](https://img.shields.io/github/release-date/team-exor/eiquidus)
-![GitHub last commit](https://img.shields.io/github/last-commit/team-exor/eiquidus)
+![GitHub release (latest by date)](https://img.shields.io/github/v/release/AdonisNetwork/ADON-Explorer?color=ffbd11&label=version)
+![GitHub Release Date](https://img.shields.io/github/release-date/AdonisNetwork/ADON-Explorer)
+![GitHub last commit](https://img.shields.io/github/last-commit/AdonisNetwork/ADON-Explorer)
 <img src="public/img/screenshots/platform-windows macos linux-lightgrey.svg" />
-![GitHub](https://img.shields.io/github/license/team-exor/eiquidus?color=ffbd11)
+![GitHub](https://img.shields.io/github/license/AdonisNetwork/ADON-Explorer?color=ffbd11)
 
-Written in node.js and mongodb, eIquidus is the most stable, secure, customizable and feature-rich open-source block explorer with support for virtually any altcoin that implements some form of the [Bitcoin RPC API protocol](https://developer.bitcoin.org/reference/rpc/index.html). Originally built for the [Exor blockchain](https://github.com/team-exor/exor), eIquidus has since grown into a fully-featured explorer with a focus on stability and security at its core. All features from the [original iquidus explorer](https://github.com/iquidus/explorer) are included here along with many new ideas from other iquidus forks, and an absolute ton of new custom changes and bug fixes that were developed specifically for eIquidus.
+Written in node.js and mongodb, ADON-Explorer is the most stable, secure, customizable and feature-rich open-source block explorer with support for virtually any altcoin that implements some form of the [Bitcoin RPC API protocol](https://developer.bitcoin.org/reference/rpc/index.html). Originally built for the [Exor blockchain](https://github.com/team-exor/exor), ADON-Explorer has since grown into a fully-featured explorer with a focus on stability and security at its core. All features from the [original iquidus explorer](https://github.com/iquidus/explorer) are included here along with many new ideas from other iquidus forks, and an absolute ton of new custom changes and bug fixes that were developed specifically for ADON-Explorer.
 
 ![Homepage](public/img/screenshots/homepage-1-101-0.png)
 
@@ -134,7 +134,7 @@ Table of Contents
   - **Transaction Info:** Displays transaction summary, optional OP_RETURN value, list of input addresses and output addresses for a specific transaction
   - **Address Info:** Displays wallet address summary (balance, total sent, total received, QR code) and a list of latest transactions for a specific wallet address
 - Choose from 26 built-in themes with tweakable settings such as light and dark options to customize the look and feel of the explorer:
-  - **Exor** *\*default theme made especially for eIquidus*
+  - **Exor** *\*default theme made especially for ADON-Explorer*
   - **Cerulean** ([Preview](https://bootswatch.com/cerulean/))
   - **Cosmo** ([Preview](https://bootswatch.com/cosmo/))
   - **Cyborg** ([Preview](https://bootswatch.com/cyborg/))
@@ -227,7 +227,7 @@ Table of Contents
 
 #### Full Setup Guide
 
-While we do not yet have our own step-by-step setup instructions, there are a few well-written guides out there already that detail how to set up and install the [original iquidus explorer](https://github.com/iquidus/explorer). Because the setup process for iquidus is more-or-less identical to eIquidus at this moment in time (making changes to settings.json is probably the biggest difference although we have helpful comments for each setting), here are some of the more complete guides that may be useful for anyone who needs more detailed instructions than are provided in the [Quick Install Instructions](#quick-install-instructions):
+While we do not yet have our own step-by-step setup instructions, there are a few well-written guides out there already that detail how to set up and install the [original iquidus explorer](https://github.com/iquidus/explorer). Because the setup process for iquidus is more-or-less identical to ADON-Explorer at this moment in time (making changes to settings.json is probably the biggest difference although we have helpful comments for each setting), here are some of the more complete guides that may be useful for anyone who needs more detailed instructions than are provided in the [Quick Install Instructions](#quick-install-instructions):
 
 1. [Beginners Guide for Iquidus Explorer Setup](https://gist.github.com/samqju/b9fc6c007f083e6429387051e24da1c3)
 2. [Node and Iquidus Explorer Setup for Dummies](https://gist.github.com/scottie/b6179c34ce3cf200fcc5d08727a46623)
@@ -270,7 +270,7 @@ db.createUser( { user: "eiquidus", pwd: "Nd^p2d77ceBX!L", roles: [ "readWrite" ]
 ##### Download Source Code
 
 ```
-git clone https://github.com/team-exor/eiquidus explorer
+git clone https://github.com/AdonisNetwork/ADON-Explorer explorer
 ```
 
 ##### Install Node Modules
@@ -522,7 +522,7 @@ Or, run the crontab by calling the sync script directly, which should work bette
 
 ### Wallet Settings
 
-The wallet connected to eIquidus must be running with the following flags:
+The wallet connected to ADON-Explorer must be running with the following flags:
 
 ```
 -daemon -txindex
@@ -565,7 +565,7 @@ You should now be able to browse to the explorer by IP address or domain name wi
 
 **NOTE:** The following instructions are for Linux users only, but installing and configuring another webserver should be possible on any OS
 
-A few steps are involved in setting up another webserver that can bind to port 80 and forward all incoming traffic to the eIquidus node.js app. Any commercial webserver can be used to create the reverse proxy, but in this case, Nginx will be used as an example:
+A few steps are involved in setting up another webserver that can bind to port 80 and forward all incoming traffic to the ADON-Explorer node.js app. Any commercial webserver can be used to create the reverse proxy, but in this case, Nginx will be used as an example:
 
 1. Install Nginx with the following terminal cmd:
 
@@ -612,7 +612,7 @@ sudo ln -s /etc/nginx/sites-available/node /etc/nginx/sites-enabled/node
 sudo service nginx restart
 ```
 
-7. Nginx will now forward all incoming requests to eIquidus and after restarting the explorer it should be browsable via http://example.com without the need for the http://example.com:3001 port any longer.
+7. Nginx will now forward all incoming requests to ADON-Explorer and after restarting the explorer it should be browsable via http://example.com without the need for the http://example.com:3001 port any longer.
 
 ### TLS/SSL Support
 
@@ -714,7 +714,7 @@ Certbot will ask a few simple questions and generate the necessary TLS/SSL certi
 
 ### CORS Support
 
-eIquidus has basic CORS support which is useful to prevent other sites from consuming public APIs while still allowing specific websites whitelisted access.
+ADON-Explorer has basic CORS support which is useful to prevent other sites from consuming public APIs while still allowing specific websites whitelisted access.
 
 #### What is CORS?
 
@@ -726,7 +726,7 @@ eIquidus has basic CORS support which is useful to prevent other sites from cons
 
 #### How to Benefit From Using CORS?
 
-You must first set up CORS in eIquidus by editing the settings.json file and setting the value for `webserver.cors.enabled` to true.
+You must first set up CORS in ADON-Explorer by editing the settings.json file and setting the value for `webserver.cors.enabled` to true.
 
 ```
   "webserver": {
@@ -743,15 +743,15 @@ The `webserver.cors.corsorigin` setting defaults to "\*" which allows all reques
       "corsorigin": "http://example.com"
 ```
 
-The above example would allow sharing of resources from eIquidus for all data requests coming from the example.com domain, while all requests coming from any other domain would be rejected as per normal.
+The above example would allow sharing of resources from ADON-Explorer for all data requests coming from the example.com domain, while all requests coming from any other domain would be rejected as per normal.
 
-Below is an example of a simple javascript call using [jQuery](https://jquery.com) that could be used on your example.com website to return the current block count from eIquidus:
+Below is an example of a simple javascript call using [jQuery](https://jquery.com) that could be used on your example.com website to return the current block count from ADON-Explorer:
 
 ```
 jQuery(document).ready(function($) {
   $.ajax({
     type: "GET",
-    url: "http://your-eiquidus-url/api/getblockcount",
+    url: "http://your-ADON-Explorer-url/api/getblockcount",
     cache: false
   }).done(function (data) {
     alert(data);
@@ -807,7 +807,7 @@ cd /path/to/explorer && /path/to/node ./scripts/update_explorer.js "dependencies
 
 #### Backup Database Script
 
-Make a complete backup of an eIquidus mongo database and save to compressed file. A built-in locking mechanism prevents data from being updated or changed while a backup is in process. Backups can be safely created while the explorer is actively running and/or while the explorer is turned off. The following backup scenarios are supported:
+Make a complete backup of an ADON-Explorer mongo database and save to compressed file. A built-in locking mechanism prevents data from being updated or changed while a backup is in process. Backups can be safely created while the explorer is actively running and/or while the explorer is turned off. The following backup scenarios are supported:
 
 **Backup Database (No filename specified)**
 
@@ -831,9 +831,9 @@ Make a complete backup of an eIquidus mongo database and save to compressed file
 
 #### Restore Database Script
 
-Restore a previously saved eIquidus mongo database backup. :warning: **WARNING:** This will completely overwrite your existing eIquidus mongo database, so be sure to make a full backup before proceeding. A built-in locking mechanism prevents data from being updated or changed while a backup is being restored. Backups can be safely restored while the explorer is actively running and/or while the explorer is turned off.
+Restore a previously saved ADON-Explorer mongo database backup. :warning: **WARNING:** This will completely overwrite your existing ADON-Explorer mongo database, so be sure to make a full backup before proceeding. A built-in locking mechanism prevents data from being updated or changed while a backup is being restored. Backups can be safely restored while the explorer is actively running and/or while the explorer is turned off.
 
-**NOTE:** Older v1.x eIquidus database backups were compressed into tar.gz files. These older tar.gz backups can still be restored, but you must specifically add the .tar.gz suffix. Example: `npm run restore-backup /path/to/old_backup.tar.gz`
+**NOTE:** Older v1.x ADON-Explorer database backups were compressed into tar.gz files. These older tar.gz backups can still be restored, but you must specifically add the .tar.gz suffix. Example: `npm run restore-backup /path/to/old_backup.tar.gz`
 
 The following restore scenarios are supported:
 
@@ -855,7 +855,7 @@ The following restore scenarios are supported:
 
 #### Delete Database Script
 
-Wipe the eIquidus mongo database clean to start again from scratch. :warning: **WARNING:** This will completely destroy all data in your existing eIquidus mongo database, so be sure to make a full backup before proceeding. A built-in locking mechanism prevents data from being updated or changed while the database is being deleted. The process to delete the database can be executed while the explorer is actively running and/or while the explorer is turned off.
+Wipe the ADON-Explorer mongo database clean to start again from scratch. :warning: **WARNING:** This will completely destroy all data in your existing ADON-Explorer mongo database, so be sure to make a full backup before proceeding. A built-in locking mechanism prevents data from being updated or changed while the database is being deleted. The process to delete the database can be executed while the explorer is actively running and/or while the explorer is turned off.
 
 Delete the mongo database with the following command:
 
@@ -892,16 +892,6 @@ Where [SIZE] is an integer higher than the default.
 
 This error can appear when you try to run the explorer on a port number lower than 1024. There are a couple solutions to this problem which are explained in more detail in the [Run Express Webserver on Port 80](#run-express-webserver-on-port-80) section.
 
-### Donations / Support Us
-
-The eIquidus block explorer is brought to you by the tireless efforts of the [Exor development team](https://exor.io/#section-team) for the benefit of the greater crypto community. If you enjoy our work, please consider supporting our continued development of this and many other cool crypto projects which you can find on our [github page](https://github.com/team-exor).
-
-Please consider supporting us with a small donation by sending us some cryptocurrency:
-
-- **BTC:** [15zQAQFB9KR35nPWEJEKvmytUF6fg2zvdP](https://www.blockchain.com/btc/address/15zQAQFB9KR35nPWEJEKvmytUF6fg2zvdP)
-- **EXOR:** [EYYW8Nvz5aJz33M3JNHXG2FEHWUsntozrd](https://explorer.exor.io/address/EYYW8Nvz5aJz33M3JNHXG2FEHWUsntozrd)
-
-We also encourage submitting quality pull requests from software developers looking to help make the block explorer even better.
 
 ### Special Thanks
 
@@ -912,7 +902,7 @@ We also encourage submitting quality pull requests from software developers look
 - All the rest of the Iquidus contributors who helped shape the Iquidus explorer in some way
 
 ### License
-
+Copyright (c) 2022 Adonis Network<br />
 Copyright (c) 2019-2022, The Exor Community<br />
 Copyright (c) 2017, The Chaincoin Community<br />
 Copyright (c) 2015, Iquidus Technology<br />
