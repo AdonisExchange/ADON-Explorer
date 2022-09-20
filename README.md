@@ -210,7 +210,7 @@ Table of Contents
 
 ### See it in Action
 
--  https://explorer.exor.io/
+-  http://explorer.adonis.network
 
 ### Installation
 
