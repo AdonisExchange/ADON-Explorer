@@ -1,10 +1,10 @@
 # ADON-Explorer
 
-![GitHub release (latest by date)](https://img.shields.io/github/v/release/AdonisNetwork/ADON-Explorer?color=ffbd11&label=version)
-![GitHub Release Date](https://img.shields.io/github/release-date/AdonisNetwork/ADON-Explorer)
-![GitHub last commit](https://img.shields.io/github/last-commit/AdonisNetwork/ADON-Explorer)
+![GitHub release (latest by date)](https://img.shields.io/github/v/release/AdonisExchange/ADON-Explorer?color=ffbd11&label=version)
+![GitHub Release Date](https://img.shields.io/github/release-date/AdonisExchange/ADON-Explorer)
+![GitHub last commit](https://img.shields.io/github/last-commit/AdonisExchange/ADON-Explorer)
 <img src="public/img/screenshots/platform-windows macos linux-lightgrey.svg" />
-![GitHub](https://img.shields.io/github/license/AdonisNetwork/ADON-Explorer?color=ffbd11)
+![GitHub](https://img.shields.io/github/license/AdonisExchange/ADON-Explorer?color=ffbd11)
 
 Written in node.js and mongodb, ADON-Explorer is the most stable, secure, customizable and feature-rich open-source block explorer with support for virtually any altcoin that implements some form of the [Bitcoin RPC API protocol](https://developer.bitcoin.org/reference/rpc/index.html). Originally built for the [Exor blockchain](https://github.com/team-exor/exor), ADON-Explorer has since grown into a fully-featured explorer with a focus on stability and security at its core. All features from the [original iquidus explorer](https://github.com/iquidus/explorer) are included here along with many new ideas from other iquidus forks, and an absolute ton of new custom changes and bug fixes that were developed specifically for ADON-Explorer.
 
@@ -259,7 +259,7 @@ db.createUser( { user: "eiquidus", pwd: "Nd^p2d77ceBX!L", roles: [ "readWrite" ]
 ##### Download Source Code
 
 ```
-git clone https://github.com/AdonisNetwork/ADON-Explorer explorer
+git clone https://github.com/AdonisExchange/ADON-Explorer explorer
 ```
 
 ##### Install Node Modules
